@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração do Simulado</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <img src="/static/images/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner" class="img-fluid" style="max-width: 300px;">
+        </div>
+        <h1 class="mb-4">Configuração do Simulado</h1>
+        <form id="config-form" action="/quiz" method="POST" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="num_questions">Número de Perguntas:</label>
+                <input type="number" class="form-control" id="num_questions" name="num_questions" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Duração (minutos):</label>
+                <input type="number" class="form-control" id="duration" name="duration" min="1" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Simulado</button>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            const numQuestions = document.getElementById('num_questions').value;
+            const duration = document.getElementById('duration').value;
+            if (numQuestions <= 0 || duration <= 0) {
+                alert("Por favor, insira valores maiores que zero.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/static/js/script.js"></script>
+    <style>
+        #question-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Simulado</h1>
+        <div id="timer" class="mb-3">Tempo restante: <span id="time">00:00</span></div>
+        <div id="question-container">
+            <div id="question-number" class="mb-3"></div>
+            <div id="question-text" class="mb-3"></div>
+            <div id="options" class="mb-3"></div>
+            <button id="prev-button" class="btn btn-secondary mr-2" onclick="prevQuestion()">Anterior</button>
+            <button id="next-button" class="btn btn-secondary mr-2" onclick="nextQuestion()">Próxima</button>
+            <button id="mark-button" class="btn btn-warning mr-2" onclick="markForReview()">Marcar para Revisão</button>
+            <button id="submit-button" class="btn btn-success" onclick="submitQuiz()">Enviar Simulado</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const duration = {{ duration }}; // Get duration from the server
+            let timer = duration, minutes, seconds;
+            const display = document.querySelector('#time');
+            
+            function startTimer() {
+                const interval = setInterval(() => {
+                    minutes = parseInt(timer / 60, 10);
+                    seconds = parseInt(timer % 60, 10);
+
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    display.textContent = minutes + ":" + seconds;
+
+                    if (--timer < 0) {
+                        clearInterval(interval);
+                        submitQuiz();
+                    }
+                }, 1000);
+            }
+
+            startTimer();
+        });
+
+        let currentQuestionIndex = 0;
+        let responses = {};
+        let questions = JSON.parse('{{ questions|tojson }}');
+
+        function loadQuestion(index) {
+            if (index < 0 || index >= questions.length) {
+                return;
+            }
+            currentQuestionIndex = index;
+            document.getElementById('question-number').innerHTML = `<h2>Questão ${index + 1}</h2>`;
+            document.getElementById('question-text').innerHTML = `<p>${questions[index].question}</p>`;
+            document.getElementById('options').innerHTML = questions[index].options.map(option => {
+                return `<label class="d-block">
+                            <input type="radio" name="question-${questions[index].id}" value="${option}" 
+                            ${responses[questions[index].id] === option ? 'checked' : ''}>
+                            ${option}
+                        </label>`;
+            }).join('');
+            document.getElementById('prev-button').style.display = index === 0 ? 'none' : 'inline';
+            document.getElementById('next-button').style.display = index === questions.length - 1 ? 'none' : 'inline';
+            document.getElementById('submit-button').style.display = index === questions.length - 1 ? 'inline' : 'none';
+        }
+
+        function prevQuestion() {
+            saveResponse();
+            loadQuestion(currentQuestionIndex - 1);
+        }
+
+        function nextQuestion() {
+            saveResponse();
+            loadQuestion(currentQuestionIndex + 1);
+        }
+
+        function saveResponse() {
+            const options = document.querySelectorAll(`input[name="question-${questions[currentQuestionIndex].id}"]`);
+            options.forEach(option => {
+                if (option.checked) {
+                    responses[questions[currentQuestionIndex].id] = option.value;
+                }
+            });
+        }
+
+        function markForReview() {
+            // Functionality to mark for review
+            console.log(`Question ${currentQuestionIndex + 1} marked for review.`);
+        }
+
+        function submitQuiz() {
+            saveResponse();
+            fetch('/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ responses: Object.keys(responses).map(id => ({ id: id, answer: responses[id] })) })
+            })
+            .then(response => response.json())
+            .then(result => {
+                window.location.href = `/result`;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        window.onload = () => {
+            document.getElementById('question-container').style.display = 'block';
+            loadQuestion(0);
+        };
+    </script>
+</body>
+</html>

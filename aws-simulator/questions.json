@@ -1,0 +1,482 @@
+[
+    {
+        "question": "Qual é um dos principais benefícios do modelo de nuvem?",
+        "options": ["A) Atualizações manuais de software", "B) CapEx mais alto", "C) Alta latência", "D) Escalabilidade sob demanda"],
+        "answer": "D) Escalabilidade sob demanda",
+        "explanation": "A nuvem permite que os recursos sejam escalados de acordo com a demanda, o que é um dos seus principais benefícios."
+    },
+    {
+        "question": "Qual é uma característica essencial dos serviços em nuvem?",
+        "options": ["A) Alto custo inicial", "B) Alta manutenção de hardware", "C) Modelo de pagamento por uso", "D) Complexidade de implementação"],
+        "answer": "C) Modelo de pagamento por uso",
+        "explanation": "Os serviços em nuvem são geralmente cobrados com base no uso, oferecendo flexibilidade financeira."
+    },
+    {
+        "question": "Qual serviço AWS é usado para armazenamento de objetos?",
+        "options": ["A) Amazon EBS", "B) Amazon S3", "C) Amazon RDS", "D) AWS Lambda"],
+        "answer": "B) Amazon S3",
+        "explanation": "Amazon S3 (Simple Storage Service) é usado para armazenamento de objetos na AWS."
+    },
+    {
+        "question": "Qual serviço da AWS oferece capacidade de computação escalável na nuvem?",
+        "options": ["A) Amazon S3", "B) Amazon EC2", "C) Amazon RDS", "D) Amazon CloudFront"],
+        "answer": "B) Amazon EC2",
+        "explanation": "Amazon EC2 (Elastic Compute Cloud) fornece capacidade de computação escalável na nuvem."
+    },
+    {
+        "question": "Qual é um dos princípios do Well-Architected Framework da AWS?",
+        "options": ["A) Complexidade", "B) Excelência operacional", "C) CapEx mais alto", "D) Atualizações manuais"],
+        "answer": "B) Excelência operacional",
+        "explanation": "Excelência operacional é um dos pilares do Well-Architected Framework da AWS."
+    },
+    {
+        "question": "Qual prática é recomendada para otimizar custos na AWS?",
+        "options": ["A) Utilizar apenas instâncias sob demanda", "B) Dimensionar automaticamente os recursos", "C) Evitar o uso de tags", "D) Usar apenas uma região"],
+        "answer": "B) Dimensionar automaticamente os recursos",
+        "explanation": "Dimensionar automaticamente os recursos ajuda a otimizar os custos, ajustando a capacidade conforme necessário."
+    },
+    {
+        "question": "Qual serviço da AWS ajuda a gerenciar chaves de criptografia?",
+        "options": ["A) AWS IAM", "B) AWS KMS", "C) Amazon RDS", "D) Amazon VPC"],
+        "answer": "B) AWS KMS",
+        "explanation": "AWS Key Management Service (KMS) é usado para gerenciar chaves de criptografia."
+    },
+    {
+        "question": "Qual é um princípio da segurança na nuvem da AWS?",
+        "options": ["A) Confiar implicitamente em todas as redes", "B) Privilégios mínimos", "C) Acesso ilimitado a todos os usuários", "D) Sem necessidade de monitoramento"],
+        "answer": "B) Privilégios mínimos",
+        "explanation": "Privilégios mínimos significa conceder o menor nível de acesso necessário para realizar uma tarefa, melhorando a segurança."
+    },
+    {
+        "question": "Qual ferramenta da AWS permite visualizar e gerenciar custos e uso?",
+        "options": ["A) AWS CloudFormation", "B) AWS Budgets", "C) Amazon CloudWatch", "D) AWS Direct Connect"],
+        "answer": "B) AWS Budgets",
+        "explanation": "AWS Budgets permite visualizar e gerenciar os custos e o uso da AWS."
+    },
+    {
+        "question": "Qual é um benefício do modelo de pagamento conforme o uso na AWS?",
+        "options": ["A) Custos fixos mensais", "B) Pagamento antecipado obrigatório", "C) Flexibilidade financeira", "D) Nenhum controle sobre os custos"],
+        "answer": "C) Flexibilidade financeira",
+        "explanation": "O modelo de pagamento conforme o uso oferece flexibilidade financeira, permitindo pagar apenas pelo que se usa."
+    },
+    {
+        "question": "Qual serviço AWS é usado para distribuição de conteúdo?",
+        "options": ["A) Amazon EC2", "B) AWS Elastic Beanstalk", "C) Amazon CloudFront", "D) AWS Lambda"],
+        "answer": "C) Amazon CloudFront",
+        "explanation": "Amazon CloudFront é um serviço de distribuição de conteúdo (CDN) da AWS."
+    },
+    {
+        "question": "Qual serviço AWS é usado para gerenciar contêineres?",
+        "options": ["A) AWS IAM", "B) Amazon EKS", "C) Amazon S3", "D) AWS Direct Connect"],
+        "answer": "B) Amazon EKS",
+        "explanation": "Amazon EKS (Elastic Kubernetes Service) é um serviço gerenciado para executar Kubernetes na AWS."
+    },
+    {
+        "question": "Qual serviço da AWS é ideal para análise de dados em tempo real?",
+        "options": ["A) Amazon RDS", "B) Amazon Redshift", "C) AWS Glue", "D) Amazon Kinesis"],
+        "answer": "D) Amazon Kinesis",
+        "explanation": "Amazon Kinesis é uma plataforma para coletar, processar e analisar dados em tempo real."
+    },
+    {
+        "question": "Qual serviço AWS é utilizado para hospedar APIs?",
+        "options": ["A) AWS Lambda", "B) Amazon API Gateway", "C) Amazon RDS", "D) Amazon S3"],
+        "answer": "B) Amazon API Gateway",
+        "explanation": "Amazon API Gateway permite que os desenvolvedores criem, publiquem, mantenham, monitorem e protejam APIs em escala."
+    },
+    {
+        "question": "Qual serviço AWS é ideal para criar pipelines de entrega contínua?",
+        "options": ["A) AWS CodePipeline", "B) AWS CloudFormation", "C) Amazon SNS", "D) AWS CloudTrail"],
+        "answer": "A) AWS CodePipeline",
+        "explanation": "AWS CodePipeline é um serviço para criar, testar e implantar código automaticamente."
+    },
+    {
+        "question": "Qual serviço AWS facilita a criação e gerência de clusters de contêineres usando Kubernetes?",
+        "options": ["A) Amazon ECS", "B) Amazon EKS", "C) AWS Fargate", "D) Amazon Lightsail"],
+        "answer": "B) Amazon EKS",
+        "explanation": "Amazon EKS (Elastic Kubernetes Service) facilita a criação e gerenciamento de clusters Kubernetes."
+    },
+    {
+        "question": "Qual serviço AWS fornece banco de dados relacional gerenciado?",
+        "options": ["A) Amazon DynamoDB", "B) Amazon RDS", "C) Amazon Aurora", "D) Amazon Redshift"],
+        "answer": "B) Amazon RDS",
+        "explanation": "Amazon RDS (Relational Database Service) fornece um banco de dados relacional gerenciado na AWS."
+    },
+    {
+        "question": "Qual serviço AWS permite implantar código diretamente no servidor?",
+        "options": ["A) AWS CodeDeploy", "B) AWS CodeCommit", "C) AWS CodeBuild", "D) AWS CodePipeline"],
+        "answer": "A) AWS CodeDeploy",
+        "explanation": "AWS CodeDeploy é um serviço que automatiza a implantação de código em qualquer instância."
+    },
+    {
+        "question": "Qual serviço AWS permite rastrear e auditar a atividade do usuário na conta AWS?",
+        "options": ["A) AWS CloudTrail", "B) AWS CloudFormation", "C) Amazon CloudWatch", "D) AWS Config"],
+        "answer": "A) AWS CloudTrail",
+        "explanation": "AWS CloudTrail permite rastrear e auditar a atividade do usuário e do serviço na conta AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece um data warehouse de alta performance?",
+        "options": ["A) Amazon RDS", "B) Amazon DynamoDB", "C) Amazon Redshift", "D) Amazon Aurora"],
+        "answer": "C) Amazon Redshift",
+        "explanation": "Amazon Redshift é um serviço de data warehouse rápido, escalável e totalmente gerenciado."
+    },
+    {
+        "question": "Qual serviço AWS permite a implementação de servidores virtuais?",
+        "options": ["A) Amazon EBS", "B) AWS CloudFormation", "C) AWS Lambda", "D) Amazon EC2"],
+        "answer": "D) Amazon EC2",
+        "explanation": "Amazon EC2 permite a implementação de servidores virtuais na nuvem."
+    },
+    {
+        "question": "Qual serviço AWS permite a criação de ambientes de desenvolvimento completos?",
+        "options": ["A) AWS CodeBuild", "B) AWS Cloud9", "C) AWS CodePipeline", "D) Amazon Lightsail"],
+        "answer": "B) AWS Cloud9",
+        "explanation": "AWS Cloud9 é um ambiente de desenvolvimento integrado baseado em nuvem que permite a escrita, execução e depuração de código com apenas um navegador."
+    },
+    {
+        "question": "Qual serviço AWS facilita a construção de aplicativos móveis e web?",
+        "options": ["A) AWS Amplify", "B) AWS Fargate", "C) Amazon S3", "D) Amazon RDS"],
+        "answer": "A) AWS Amplify",
+        "explanation": "AWS Amplify facilita a construção de aplicativos móveis e web escaláveis e seguros."
+    },
+    {
+        "question": "Qual serviço AWS permite monitorar e gerenciar logs?",
+        "options": ["A) AWS CloudFormation", "B) AWS CloudTrail", "C) Amazon CloudWatch", "D) AWS X-Ray"],
+        "answer": "C) Amazon CloudWatch",
+        "explanation": "Amazon CloudWatch é um serviço de monitoramento e gerenciamento de logs da AWS."
+    },
+    {
+        "question": "Qual serviço AWS permite a execução de código em resposta a eventos?",
+        "options": ["A) AWS Lambda", "B) Amazon EC2", "C) Amazon S3", "D) AWS CodeDeploy"],
+        "answer": "A) AWS Lambda",
+        "explanation": "AWS Lambda permite executar código em resposta a eventos sem a necessidade de gerenciar servidores."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de backup gerenciado?",
+        "options": ["A) AWS Backup", "B) AWS CloudFormation", "C) Amazon RDS", "D) Amazon S3"],
+        "answer": "A) AWS Backup",
+        "explanation": "AWS Backup oferece uma solução de backup gerenciado para proteger dados de diversos serviços da AWS."
+    },
+    {
+        "question": "Qual serviço AWS facilita a migração de bancos de dados para a nuvem?",
+        "options": ["A) AWS Database Migration Service", "B) AWS Snowball", "C) AWS Direct Connect", "D) Amazon RDS"],
+        "answer": "A) AWS Database Migration Service",
+        "explanation": "AWS Database Migration Service (DMS) facilita a migração de bancos de dados para a nuvem."
+    },
+    {
+        "question": "Qual serviço AWS permite criar e gerenciar redes virtuais na nuvem?",
+        "options": ["A) AWS Direct Connect", "B) AWS CloudFormation", "C) Amazon VPC", "D) Amazon Route 53"],
+        "answer": "C) Amazon VPC",
+        "explanation": "Amazon VPC (Virtual Private Cloud) permite criar e gerenciar redes virtuais na nuvem."
+    },
+    {
+        "question": "Qual serviço AWS é usado para gerenciar a identidade e o acesso?",
+        "options": ["A) AWS IAM", "B) AWS KMS", "C) AWS CloudTrail", "D) AWS Config"],
+        "answer": "A) AWS IAM",
+        "explanation": "AWS Identity and Access Management (IAM) permite gerenciar usuários, grupos e permissões de acesso na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece armazenamento de bloco escalável e persistente?",
+        "options": ["A) Amazon EBS", "B) Amazon S3", "C) AWS Storage Gateway", "D) Amazon RDS"],
+        "answer": "A) Amazon EBS",
+        "explanation": "Amazon Elastic Block Store (EBS) oferece armazenamento de bloco escalável e persistente para uso com instâncias EC2."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de gerenciamento de configuração?",
+        "options": ["A) AWS CloudFormation", "B) AWS Config", "C) AWS OpsWorks", "D) AWS Systems Manager"],
+        "answer": "B) AWS Config",
+        "explanation": "AWS Config oferece uma solução de gerenciamento de configuração, permitindo monitorar e avaliar configurações de recursos da AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma plataforma de mensagens gerenciada?",
+        "options": ["A) Amazon SNS", "B) Amazon SQS", "C) AWS Step Functions", "D) Amazon MQ"],
+        "answer": "A) Amazon SNS",
+        "explanation": "Amazon Simple Notification Service (SNS) é uma plataforma de mensagens gerenciada para entrega de mensagens de alto volume."
+    },
+    {
+        "question": "Qual serviço AWS permite a criação de fluxos de trabalho de aplicativos?",
+        "options": ["A) AWS Step Functions", "B) AWS Lambda", "C) Amazon SQS", "D) AWS Glue"],
+        "answer": "A) AWS Step Functions",
+        "explanation": "AWS Step Functions permite a criação de fluxos de trabalho de aplicativos utilizando serviços da AWS."
+    },
+    {
+        "question": "Qual serviço AWS é usado para gerenciar chaves de criptografia?",
+        "options": ["A) AWS IAM", "B) AWS KMS", "C) AWS CloudHSM", "D) AWS Secrets Manager"],
+        "answer": "B) AWS KMS",
+        "explanation": "AWS Key Management Service (KMS) é usado para gerenciar chaves de criptografia na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de balanceamento de carga?",
+        "options": ["A) Amazon CloudFront", "B) Amazon Route 53", "C) AWS ELB", "D) Amazon S3"],
+        "answer": "C) AWS ELB",
+        "explanation": "AWS Elastic Load Balancing (ELB) oferece uma solução de balanceamento de carga para distribuir o tráfego de aplicativos."
+    },
+    {
+        "question": "Qual serviço AWS facilita a implantação de aplicativos web e móveis?",
+        "options": ["A) AWS Elastic Beanstalk", "B) AWS Lambda", "C) Amazon EC2", "D) Amazon S3"],
+        "answer": "A) AWS Elastic Beanstalk",
+        "explanation": "AWS Elastic Beanstalk facilita a implantação e o gerenciamento de aplicativos web e móveis na AWS."
+    },
+    {
+        "question": "Qual serviço AWS é usado para hospedar repositórios de código fonte?",
+        "options": ["A) AWS CodeCommit", "B) AWS CodeBuild", "C) AWS CodePipeline", "D) AWS CodeDeploy"],
+        "answer": "A) AWS CodeCommit",
+        "explanation": "AWS CodeCommit é um serviço de controle de versão que hospeda repositórios Git privados na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece um repositório de imagens de contêiner gerenciado?",
+        "options": ["A) Amazon ECR", "B) Amazon ECS", "C) AWS Fargate", "D) Amazon S3"],
+        "answer": "A) Amazon ECR",
+        "explanation": "Amazon Elastic Container Registry (ECR) oferece um repositório de imagens de contêiner gerenciado na AWS."
+    },
+    {
+        "question": "Qual serviço AWS é usado para gerenciar e provisionar recursos de infraestrutura?",
+        "options": ["A) AWS OpsWorks", "B) AWS CloudFormation", "C) AWS Systems Manager", "D) AWS Elastic Beanstalk"],
+        "answer": "B) AWS CloudFormation",
+        "explanation": "AWS CloudFormation é usado para gerenciar e provisionar recursos de infraestrutura utilizando templates."
+    },
+    {
+        "question": "Qual serviço AWS permite a execução de tarefas em contêineres sem gerenciar servidores?",
+        "options": ["A) Amazon ECS", "B) Amazon EKS", "C) AWS Fargate", "D) AWS Lambda"],
+        "answer": "C) AWS Fargate",
+        "explanation": "AWS Fargate permite a execução de tarefas em contêineres sem a necessidade de gerenciar servidores."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de CI/CD para automação de pipeline de entrega?",
+        "options": ["A) AWS CodePipeline", "B) AWS CodeBuild", "C) AWS CodeDeploy", "D) AWS CodeCommit"],
+        "answer": "A) AWS CodePipeline",
+        "explanation": "AWS CodePipeline é um serviço de CI/CD que automatiza a construção, teste e implantação de código."
+    },
+    {
+        "question": "Qual serviço AWS facilita a criação e execução de aplicativos serverless?",
+        "options": ["A) AWS Lambda", "B) Amazon EC2", "C) Amazon Lightsail", "D) AWS CloudFormation"],
+        "answer": "A) AWS Lambda",
+        "explanation": "AWS Lambda facilita a criação e execução de aplicativos serverless na AWS."
+    },
+    {
+        "question": "Qual serviço AWS permite a criação de clusters de banco de dados MySQL e PostgreSQL altamente disponíveis?",
+        "options": ["A) Amazon RDS", "B) Amazon Aurora", "C) Amazon Redshift", "D) Amazon DynamoDB"],
+        "answer": "B) Amazon Aurora",
+        "explanation": "Amazon Aurora é um banco de dados relacional compatível com MySQL e PostgreSQL altamente disponível e escalável."
+    },
+    {
+        "question": "Qual serviço AWS oferece um cache gerenciado na nuvem?",
+        "options": ["A) Amazon RDS", "B) Amazon ElastiCache", "C) Amazon DynamoDB", "D) AWS CloudFormation"],
+        "answer": "B) Amazon ElastiCache",
+        "explanation": "Amazon ElastiCache oferece um cache gerenciado na nuvem compatível com Redis e Memcached."
+    },
+    {
+        "question": "Qual serviço AWS facilita a criação de soluções de data lake?",
+        "options": ["A) Amazon Redshift", "B) Amazon S3", "C) AWS Lake Formation", "D) AWS Glue"],
+        "answer": "C) AWS Lake Formation",
+        "explanation": "AWS Lake Formation facilita a criação de soluções de data lake na AWS."
+    },
+    {
+        "question": "Qual serviço AWS permite a execução de código JavaScript no navegador?",
+        "options": ["A) AWS Lambda", "B) AWS Amplify", "C) AWS Cloud9", "D) AWS CloudFront"],
+        "answer": "B) AWS Amplify",
+        "explanation": "AWS Amplify facilita a execução de código JavaScript no navegador para aplicativos web e móveis."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de monitoramento de desempenho de aplicativos?",
+        "options": ["A) Amazon CloudWatch", "B) AWS X-Ray", "C) AWS CloudTrail", "D) AWS Config"],
+        "answer": "B) AWS X-Ray",
+        "explanation": "AWS X-Ray oferece uma solução de monitoramento de desempenho de aplicativos na AWS."
+    },
+    {
+        "question": "Qual serviço AWS facilita a execução de contêineres Docker na nuvem?",
+        "options": ["A) Amazon ECS", "B) Amazon EKS", "C) AWS Fargate", "D) Amazon Lightsail"],
+        "answer": "A) Amazon ECS",
+        "explanation": "Amazon Elastic Container Service (ECS) facilita a execução de contêineres Docker na nuvem."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de DNS gerenciada?",
+        "options": ["A) Amazon CloudFront", "B) Amazon Route 53", "C) AWS Direct Connect", "D) Amazon VPC"],
+        "answer": "B) Amazon Route 53",
+        "explanation": "Amazon Route 53 oferece uma solução de DNS gerenciada para roteamento de tráfego na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de armazenamento de arquivos gerenciada?",
+        "options": ["A) Amazon EBS", "B) Amazon S3", "C) Amazon EFS", "D) AWS Backup"],
+        "answer": "C) Amazon EFS",
+        "explanation": "Amazon Elastic File System (EFS) oferece uma solução de armazenamento de arquivos gerenciada e escalável na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de banco de dados NoSQL gerenciado?",
+        "options": ["A) Amazon RDS", "B) Amazon Redshift", "C) Amazon DynamoDB", "D) Amazon Aurora"],
+        "answer": "C) Amazon DynamoDB",
+        "explanation": "Amazon DynamoDB é um banco de dados NoSQL gerenciado e escalável na AWS."
+    },
+    {
+        "question": "Qual serviço AWS facilita a criação de aplicações de big data?",
+        "options": ["A) AWS Glue", "B) Amazon EMR", "C) Amazon Redshift", "D) AWS Data Pipeline"],
+        "answer": "B) Amazon EMR",
+        "explanation": "Amazon EMR (Elastic MapReduce) facilita a criação de aplicações de big data utilizando Hadoop, Spark e outros frameworks."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de mensageria gerenciada para sistemas distribuídos?",
+        "options": ["A) Amazon SQS", "B) Amazon SNS", "C) AWS Step Functions", "D) Amazon MQ"],
+        "answer": "A) Amazon SQS",
+        "explanation": "Amazon Simple Queue Service (SQS) oferece uma solução de mensageria gerenciada para sistemas distribuídos."
+    },
+    {
+        "question": "Qual serviço AWS oferece um sistema de gerenciamento de identidade e acesso centralizado?",
+        "options": ["A) AWS IAM", "B) AWS Organizations", "C) AWS Control Tower", "D) AWS SSO"],
+        "answer": "D) AWS SSO",
+        "explanation": "AWS Single Sign-On (SSO) oferece um sistema de gerenciamento de identidade e acesso centralizado para aplicativos da AWS."
+    },
+    {
+        "question": "Qual serviço AWS permite a criação de APIs GraphQL gerenciadas?",
+        "options": ["A) Amazon API Gateway", "B) AWS AppSync", "C) AWS Lambda", "D) AWS Amplify"],
+        "answer": "B) AWS AppSync",
+        "explanation": "AWS AppSync permite a criação de APIs GraphQL gerenciadas na AWS."
+    },
+    {
+        "question": "Qual serviço AWS facilita a migração de aplicativos para a nuvem?",
+        "options": ["A) AWS DMS", "B) AWS SMS", "C) AWS Snowball", "D) AWS Application Migration Service"],
+        "answer": "D) AWS Application Migration Service",
+        "explanation": "AWS Application Migration Service facilita a migração de aplicativos para a nuvem."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de análise de logs?",
+        "options": ["A) AWS CloudTrail", "B) Amazon CloudWatch Logs", "C) AWS Config", "D) AWS X-Ray"],
+        "answer": "B) Amazon CloudWatch Logs",
+        "explanation": "Amazon CloudWatch Logs oferece uma solução de análise de logs na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de virtualização de desktops?",
+        "options": ["A) Amazon WorkSpaces", "B) Amazon AppStream 2.0", "C) Amazon EC2", "D) AWS Lambda"],
+        "answer": "A) Amazon WorkSpaces",
+        "explanation": "Amazon WorkSpaces oferece uma solução de virtualização de desktops na AWS."
+    },
+    {
+        "question": "Qual serviço AWS permite a criação de clusters de processamento de dados em tempo real?",
+        "options": ["A) Amazon Kinesis", "B) AWS Glue", "C) Amazon EMR", "D) Amazon Redshift"],
+        "answer": "A) Amazon Kinesis",
+        "explanation": "Amazon Kinesis permite a criação de clusters de processamento de dados em tempo real na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de gerenciamento de custos e faturamento?",
+        "options": ["A) AWS Cost Explorer", "B) AWS Budgets", "C) AWS Cost and Usage Report", "D) AWS Billing"],
+        "answer": "A) AWS Cost Explorer",
+        "explanation": "AWS Cost Explorer oferece uma solução de gerenciamento de custos e faturamento na AWS."
+    },
+    {
+        "question": "Qual serviço AWS facilita a criação de pipelines de dados automatizados?",
+        "options": ["A) AWS Glue", "B) AWS Data Pipeline", "C) Amazon Kinesis", "D) Amazon EMR"],
+        "answer": "B) AWS Data Pipeline",
+        "explanation": "AWS Data Pipeline facilita a criação de pipelines de dados automatizados na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de backup e restauração de dados?",
+        "options": ["A) AWS Backup", "B) Amazon S3 Glacier", "C) AWS CloudFormation", "D) Amazon RDS"],
+        "answer": "A) AWS Backup",
+        "explanation": "AWS Backup oferece uma solução de backup e restauração de dados para diversos serviços da AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de autenticação multifator (MFA)?",
+        "options": ["A) AWS IAM", "B) AWS Directory Service", "C) AWS Cognito", "D) AWS SSO"],
+        "answer": "C) AWS Cognito",
+        "explanation": "AWS Cognito oferece uma solução de autenticação multifator (MFA) para aplicativos da AWS."
+    },
+    {
+        "question": "Qual serviço AWS permite a criação de dashboards de monitoramento personalizados?",
+        "options": ["A) AWS CloudWatch", "B) AWS X-Ray", "C) AWS CloudTrail", "D) AWS Config"],
+        "answer": "A) AWS CloudWatch",
+        "explanation": "AWS CloudWatch permite a criação de dashboards de monitoramento personalizados na AWS."
+    },
+    {
+        "question": "Qual serviço AWS facilita a criação de aplicativos de machine learning?",
+        "options": ["A) Amazon SageMaker", "B) AWS Glue", "C) Amazon EMR", "D) AWS Step Functions"],
+        "answer": "A) Amazon SageMaker",
+        "explanation": "Amazon SageMaker facilita a criação, treinamento e implantação de modelos de machine learning na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de diretório gerenciado?",
+        "options": ["A) AWS IAM", "B) AWS Directory Service", "C) AWS SSO", "D) AWS Organizations"],
+        "answer": "B) AWS Directory Service",
+        "explanation": "AWS Directory Service oferece uma solução de diretório gerenciado na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de detecção de ameaças e monitoramento contínuo?",
+        "options": ["A) AWS Shield", "B) AWS WAF", "C) AWS GuardDuty", "D) AWS Macie"],
+        "answer": "C) AWS GuardDuty",
+        "explanation": "AWS GuardDuty oferece uma solução de detecção de ameaças e monitoramento contínuo na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de firewall gerenciado?",
+        "options": ["A) AWS Shield", "B) AWS WAF", "C) AWS Firewall Manager", "D) Amazon VPC"],
+        "answer": "B) AWS WAF",
+        "explanation": "AWS Web Application Firewall (WAF) oferece uma solução de firewall gerenciado para proteger aplicativos web na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de gerenciamento de certificados SSL/TLS?",
+        "options": ["A) AWS IAM", "B) AWS Certificate Manager", "C) Amazon CloudFront", "D) Amazon Route 53"],
+        "answer": "B) AWS Certificate Manager",
+        "explanation": "AWS Certificate Manager (ACM) oferece uma solução de gerenciamento de certificados SSL/TLS na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de monitoramento de eventos de segurança?",
+        "options": ["A) AWS CloudTrail", "B) AWS Config", "C) AWS GuardDuty", "D) Amazon CloudWatch"],
+        "answer": "A) AWS CloudTrail",
+        "explanation": "AWS CloudTrail oferece uma solução de monitoramento de eventos de segurança e auditoria na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de segurança para dados sensíveis?",
+        "options": ["A) AWS Shield", "B) AWS Macie", "C) AWS WAF", "D) AWS KMS"],
+        "answer": "B) AWS Macie",
+        "explanation": "AWS Macie oferece uma solução de segurança para dados sensíveis utilizando machine learning para descobrir e proteger dados na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de proteção contra ataques DDoS?",
+        "options": ["A) AWS Shield", "B) AWS WAF", "C) AWS GuardDuty", "D) AWS Firewall Manager"],
+        "answer": "A) AWS Shield",
+        "explanation": "AWS Shield oferece uma solução de proteção contra ataques DDoS na AWS."
+    },
+    {
+        "question": "Qual serviço AWS facilita a criação de aplicativos IoT?",
+        "options": ["A) AWS Lambda", "B) AWS IoT Core", "C) AWS Greengrass", "D) AWS IoT Analytics"],
+        "answer": "B) AWS IoT Core",
+        "explanation": "AWS IoT Core facilita a criação de aplicativos IoT e a conexão de dispositivos à nuvem."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de orquestração de contêineres?",
+        "options": ["A) Amazon ECS", "B) Amazon EKS", "C) AWS Fargate", "D) Amazon S3"],
+        "answer": "B) Amazon EKS",
+        "explanation": "Amazon Elastic Kubernetes Service (EKS) oferece uma solução de orquestração de contêineres na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de transferência de dados de alta velocidade?",
+        "options": ["A) AWS Direct Connect", "B) AWS Snowball", "C) AWS Storage Gateway", "D) Amazon S3"],
+        "answer": "A) AWS Direct Connect",
+        "explanation": "AWS Direct Connect oferece uma solução de transferência de dados de alta velocidade entre data centers locais e a AWS."
+    },
+    {
+        "question": "Qual serviço AWS facilita a criação de chatbots?",
+        "options": ["A) Amazon Lex", "B) Amazon Polly", "C) Amazon Rekognition", "D) Amazon Comprehend"],
+        "answer": "A) Amazon Lex",
+        "explanation": "Amazon Lex facilita a criação de chatbots utilizando a mesma tecnologia de reconhecimento de voz da Alexa."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de transcrição de áudio?",
+        "options": ["A) Amazon Transcribe", "B) Amazon Polly", "C) Amazon Rekognition", "D) Amazon Comprehend"],
+        "answer": "A) Amazon Transcribe",
+        "explanation": "Amazon Transcribe oferece uma solução de transcrição de áudio para texto na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de análise de sentimentos em texto?",
+        "options": ["A) Amazon Comprehend", "B) Amazon Polly", "C) Amazon Rekognition", "D) Amazon Lex"],
+        "answer": "A) Amazon Comprehend",
+        "explanation": "Amazon Comprehend oferece uma solução de análise de sentimentos e extração de insights de texto na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de conversão de texto em fala?",
+        "options": ["A) Amazon Polly", "B) Amazon Comprehend", "C) Amazon Lex", "D) Amazon Transcribe"],
+        "answer": "A) Amazon Polly",
+        "explanation": "Amazon Polly oferece uma solução de conversão de texto em fala com vozes realistas na AWS."
+    },
+    {
+        "question": "Qual serviço AWS oferece uma solução de reconhecimento de imagens e vídeos?",
+        "options": ["A) Amazon Rekognition", "B) Amazon Polly", "C) Amazon Lex", "D) Amazon Comprehend"],
+        "answer": "A) Amazon Rekognition",
+        "explanation": "Amazon Rekognition oferece uma solução de reconhecimento de imagens e vídeos utilizando machine learning na AWS."
+    }
+]
