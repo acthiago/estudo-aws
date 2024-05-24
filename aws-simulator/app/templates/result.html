@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado do Simulado</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #343a40;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+        .correct-answer {
+            background-color: #d4edda;
+        }
+        .wrong-answer {
+            background-color: #f8d7da;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
@@ -14,53 +50,31 @@
         <button class="btn btn-primary mb-4" onclick="startNewQuiz()">Iniciar Novo Simulado</button>
         <button class="btn btn-secondary mb-4" onclick="reviewQuestions()">Revisar Questões</button>
 
-        <h2>Questões Certas</h2>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Questão</th>
-                    <th>Sua Resposta</th>
-                    <th>Resposta Correta</th>
-                    <th>Explicação</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for question in questions %}
-                    {% if question.user_answer == question.answer %}
-                        <tr>
+        <div id="review-section" style="display: none;">
+            <h2>Revisão de Questões</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Questão</th>
+                        <th>Sua Resposta</th>
+                        <th>Resposta Correta</th>
+                        <th>Explicação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for question in questions %}
+                        <tr class="{{ 'correct-answer' if question.user_answer == question.answer else 'wrong-answer' }}">
+                            <td>{{ loop.index }}</td>
                             <td>{{ question.question }}</td>
                             <td>{{ question.user_answer }}</td>
                             <td>{{ question.answer }}</td>
                             <td>{{ question.explanation }}</td>
                         </tr>
-                    {% endif %}
-                {% endfor %}
-            </tbody>
-        </table>
-
-        <h2>Questões Erradas</h2>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Questão</th>
-                    <th>Sua Resposta</th>
-                    <th>Resposta Correta</th>
-                    <th>Explicação</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for question in questions %}
-                    {% if question.user_answer != question.answer %}
-                        <tr>
-                            <td>{{ question.question }}</td>
-                            <td>{{ question.user_answer }}</td>
-                            <td>{{ question.answer }}</td>
-                            <td>{{ question.explanation }}</td>
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-            </tbody>
-        </table>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
     <script>
         function startNewQuiz() {

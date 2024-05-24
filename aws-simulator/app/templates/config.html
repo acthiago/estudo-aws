@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuração do Simulado</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #343a40;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
@@ -13,6 +38,14 @@
         </div>
         <h1 class="mb-4">Configuração do Simulado</h1>
         <form id="config-form" action="/quiz" method="POST" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="simulation_type">Tipo de Simulado:</label>
+                <select class="form-control" id="simulation_type" name="simulation_type" required>
+                    <option value="cloud_practitioner">AWS Certified Cloud Practitioner</option>
+                    <option value="solutions_architect_associate">AWS Certified Solutions Architect ‒ Associate</option>
+                    <option value="solutions_architect_professional">AWS Certified Solutions Architect - Professional</option>
+                </select>
+            </div>
             <div class="form-group">
                 <label for="num_questions">Número de Perguntas:</label>
                 <input type="number" class="form-control" id="num_questions" name="num_questions" min="1" required>
